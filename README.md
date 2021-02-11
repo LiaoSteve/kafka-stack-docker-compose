@@ -1,7 +1,11 @@
 [![Build Status](https://travis-ci.org/simplesteph/kafka-stack-docker-compose.svg?branch=master)](https://travis-ci.org/simplesteph/kafka-stack-docker-compose)
 
 # kafka-stack-docker-compose
-
+```
+https://github.com/LiaoSteve/kafka-stack-docker-compose.git
+cd kafka-stack-docker-compose
+docker-compose -f zk-single-kafka-single.yml up
+```
 This replicates as well as possible real deployment configurations, where you have your zookeeper servers and kafka servers actually all distinct from each other. This solves all the networking hurdles that comes with Docker and docker-compose, and is compatible cross platform.
 
 **UPDATE**: No /etc/hosts file changes are necessary anymore. Explanations at: https://rmoff.net/2018/08/02/kafka-listeners-explained/
